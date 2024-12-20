@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manoj Kumar BC- Portfolio</title>
+    <link rel="icon" href="portfolio.png">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+          <div class="marquee">
+            <marquee behavior="scroll" direction="left">Important Announcement: Check out my latest project on GitHub <img src="github.png" alt="github" width="20px" height="20px"> !</marquee>
+          </div>
+          
+      </div>
+    </div>
+    <header>
+      <div class="sticky-header">
+        <h1>Manoj Kumar BC</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="welcome">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Your Next Software Developer!</p>
+        <img src="manoj.jpg" alt="Manoj Kumar BC" class="profile-photo" />
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am Manoj Kumar BC, a passionate software developer with expertise in
+        Python, Java, JavaScript, HTML, CSS, and more. Currently pursuing a
+        degree in Computer Science at CMRIT, Bengaluru, with a CGPA of 7.9. I
+        aim to contribute to innovative and impactful projects.
+      </p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button>Education</button>
+          <div class="content">
+            <p><strong>B.E. in Computer Science</strong> - CMRIT, CGPA: 7.9</p>
+            <p><strong>12th Grade</strong> - Vikram ind PU college 93%</p>
+            <p>
+              <strong>10th Grade</strong> - Sri Bhakthanatha Swamy High School,
+              Mandya, 93%
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button>Technical Skills</button>
+          <div class="content">
+            <p>Programming: Python, Java</p>
+            <p>Web Technologies: HTML, CSS</p>
+            <p>Databases: MySQL</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button>Internships</button>
+          <div class="content">
+            <p>
+              <strong>Web Development Intern</strong> - Prodigy InfoTech (Sept
+              2024 - Nov 2024)
+            </p>
+            <p>
+              Developed dynamic web applications using React, Node.js, MongoDB.
+            </p>
+            <ul>
+              <li>
+                Developed and maintained web applications using HTML, CSS,
+                JavaScript, and React.
+              </li>
+              <li>Worked on back-end development with Node.js and Express.</li>
+              <li>Implemented database solutions using MongoDB.</li>
+              <li>
+                Gained valuable experience in Agile workflows, teamwork, and
+                project management.
+              </li>
+              <li>
+                Enhanced unit testing skills to ensure quality software
+                delivery.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div
+          class="card"
+          data-details="
+          The Dormitory Management System is a web-based application designed to automate and simplify the administrative tasks of managing a hostel. 
+          Key functionalities include:
+          - Room allocation and management.
+          - Attendance tracking for residents.
+          - Visitor entry logging and fee collection.
+          - Real-time data reporting for administrators.
+          Tools & Technologies: HTML, CSS, JavaScript, Django, and MySQL."
+        >
+          <h3>Dormitory Management System</h3>
+          <p>
+            Automates hostel administration tasks such as room allocation and
+            attendance tracking.
+          </p>
+          <button class="details-btn">Details</button>
+        </div>
+        <div
+          class="card"
+          data-details="
+          The Gym Management System is a software application that handles the daily operations of a gym efficiently. 
+          Key functionalities include:
+          - Member information and staff details management.
+          - Scheduling classes and tracking attendance.
+          - Billing, inventory management, and reporting.
+          Tools & Technologies: HTML, CSS, JavaScript, Tkinter (Python GUI), Django."
+        >
+          <h3>Gym Management System</h3>
+          <p>
+            Efficiently manages gym operations including scheduling, billing,
+            and inventory.
+          </p>
+          <button class="details-btn">Details</button>
+        </div>
+        <div
+          class="card"
+          data-details="
+          The Hangman Game is a classic word-guessing game designed to enhance vocabulary and spelling skills. 
+          Key features include:
+          - Interactive gameplay with levels of difficulty.
+          - Tracks player progress and offers challenges to improve language skills.
+          Tools & Technologies: HTML, CSS, and JavaScript."
+        >
+          <h3>Hangman Game</h3>
+          <p>A classic word-guessing game designed for fun and learning.</p>
+          <button class="details-btn">Details</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p class="copy">&copy; 2024 Manoj Kumar BC. All Rights Reserved.</p>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/kowshikbh"
+          target="_blank"
+          class="social-icon"
+          title="LinkedIn"
+        >
+          <img src="linkedin.png" alt="LinkedIn" />
+        </a>
+        <a
+          href="https://wa.me/+916360371265"
+          target="_blank"
+          class="social-icon"
+          title="WhatsApp"
+        >
+          <img src="whts.png" alt="WhatsApp" />
+        </a>
+        <a
+          href="https://github.com/kowshik-bh18"
+          target="_blank"
+          class="social-icon"
+          title="GitHub"
+        >
+          <img src="github.png" alt="GitHub" />
+        </a>
+        <a
+          href="https://www.instagram.com/kowshik_bh/profilecard/?igsh=Z3ZhNWpicmdiNGdm"
+          target="_blank"
+          class="social-icon"
+          title="insta"
+        >
+          <img src="instagram.png" alt="instagram" />
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal for Project Details -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

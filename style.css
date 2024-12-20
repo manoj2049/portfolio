@@ -1,0 +1,316 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* Marquee Styling */
+.marquee {
+  background-color: rgb(234, 255, 182);
+  color: rgb(189, 15, 15);
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Sticky Header */
+.sticky-header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  padding: 1em;
+  position: sticky;
+  top: 50px; /* Adjusted for marquee height */
+  z-index: 1000;
+  text-align: center;
+}
+
+.sticky-header h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Navigation */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: #222;
+}
+
+header nav ul li {
+  margin: 0 1em;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+  color: #ff7e5f;
+}
+
+/* Home Section */
+.welcome {
+  text-align: center;
+  padding: 2em;
+  background: linear-gradient(to bottom right, #feb47b, #ff7e5f);
+  color: white;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+/* About Section */
+#about {
+  padding: 2em;
+  text-align: center;
+}
+
+/* Accordion */
+.accordion-item button {
+  width: 100%;
+  text-align: left;
+  padding: 1em;
+  background: #ddd;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.accordion-item button:hover {
+  background: #ff7e5f;
+  color: white;
+}
+
+.accordion-item .content {
+  display: none;
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+/* Projects Section */
+.project-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.card {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card button {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background: #444;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%;
+  position: relative;
+}
+
+.modal-content p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5em;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Contact Section */
+#contact {
+  padding: 2em;
+  background: #f9f9f9;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact form button {
+  background: #ff7e5f;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contact form button:hover {
+  background: #feb47b;
+}
+
+/* Top Bar Styles */
+.top-bar {
+  background-color: #222;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  text-align: center;
+}
+
+.top-bar-icons a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.top-bar-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.top-bar-icons a:hover img {
+  transform: scale(1.2);
+}
+
+/* Social Media Icons in Footer */
+footer .social-links {
+  margin-top: 1em;
+}
+
+footer .social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+footer .social-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+footer .social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Profile Photo */
+.profile-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+footer .social-links {
+  margin-top: 1em;
+}
+
+footer .social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+footer .social-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+footer .social-icon:hover {
+  transform: scale(1.2);
+}
